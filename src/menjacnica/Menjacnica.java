@@ -6,7 +6,7 @@ import menjacnica.interfejs.MenjacnicaInterfejs;
 
 public class Menjacnica implements MenjacnicaInterfejs {
 
-	public void dodajKursValute(String v, double pk, double kk, double sk) {
+	public void dodajKursValute(String v, double pk, double kk, double sk, GregorianCalendar d) {
 	
 
 	}
