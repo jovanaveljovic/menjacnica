@@ -13,24 +13,32 @@ public class Kurs {
 		return datum;
 	}
 	public void setDatum(GregorianCalendar datum) {
+		if(datum==null)
+			throw new RuntimeException("Datum ne sme biti null");
 		this.datum = datum;
 	}
 	public double getProdajniKurs() {
 		return prodajniKurs;
 	}
 	public void setProdajniKurs(double prodajniKurs) {
+		if(prodajniKurs<=0)
+			throw new RuntimeException("Prodajni kurs mora biti veci od nule");
 		this.prodajniKurs = prodajniKurs;
 	}
 	public double getKupovniKurs() {
 		return kupovniKurs;
 	}
 	public void setKupovniKurs(double kupovniKurs) {
+		if(kupovniKurs<=0)
+			throw new RuntimeException("Kupovni kurs mora biti veci od nule");
 		this.kupovniKurs = kupovniKurs;
 	}
 	public double getSrednjiKurs() {
 		return srednjiKurs;
 	}
 	public void setSrednjiKurs(double srednjiKurs) {
+		if(srednjiKurs<=0)
+			throw new RuntimeException("Srednji kurs mora biti veci od nule");
 		this.srednjiKurs = srednjiKurs;
 	}
 	@Override
